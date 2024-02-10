@@ -1,0 +1,68 @@
+.Card__ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 368px;
+    width: 100%;
+    background: $clr-grad-bg;
+    border-radius: 32px;
+    color: $clr-neutral-1;
+    padding: 2.5rem;
+
+    .Card__header {
+        color: $clr-neutral-3;
+    }
+
+    .Card__circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.8rem;
+        width: 200px;
+        height: 200px;
+        background: $clr-grad-circle;
+        border-radius: 100px;
+
+        .Score {
+            margin-top: 5px;
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 5rem;
+            color: $clr-neutral-1;
+        }
+
+        .Score-desc {
+            color: $clr-neutral-3;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+    }
+
+    .Card__desc {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 0.8rem;
+
+        h3 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        p {
+            margin-top: .8rem;
+            font-size: 1.1rem;
+            color: $clr-neutral-3;
+        }
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .Card__ {
+        max-width: none;
+        width: 100%;
+        border-radius: 0px 0px 32px 32px;
+    }
+}

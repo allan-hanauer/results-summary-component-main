@@ -1,0 +1,38 @@
+.Result__ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 368px;
+    width: 100%;
+    padding: 2.5rem 2.5rem 3rem;
+
+    .Result__title {
+        font-weight: 500;
+    }
+
+    .Result__button {
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+        align-items: center;
+        font-size: 1.1rem;
+        background: $clr-neutral-4;
+        color: $clr-neutral-2;
+        border-radius: 28px;
+        border: none;
+        transition: 0.5s;
+    }
+
+    .Result__button:hover {
+        background: $clr-grad-bg $clr-neutral-4;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Result__ {
+        max-width: none;
+        width: 100%;
+
+    }
+}

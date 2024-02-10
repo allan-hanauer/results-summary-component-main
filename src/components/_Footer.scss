@@ -1,0 +1,22 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  color: red;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  footer {
+    position: relative;
+  }
+}

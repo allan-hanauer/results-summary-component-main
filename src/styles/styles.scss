@@ -1,0 +1,36 @@
+@import "./_fonts.scss";
+@import "./_colors.scss";
+@import "../components/_Footer.scss";
+@import "../components/_Result.scss";
+@import "../components/_ResultBox.scss";
+@import "../components/_Card.scss";
+@import "../components/_MainCard.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+}
+
+body,
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $clr-neutral-1;
+}
+
+@media only screen and (max-width: 768px) {
+
+  body,
+  #root {
+    flex-direction: column;
+    justify-content: initial;
+    width: 100%;
+    justify-content: space-between;
+    height: 1000px;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../styles/colors";
+
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 736px;
+  width: 100%;
+  height: 512px;
+  background: $clr-neutral-1;
+  border-radius: 32px;
+  box-shadow: 5px 5px 41px 10px $clr-neutral-6;
+  animation: top .5s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    max-width: none;
+    flex-direction: column;
+    width: 100%;
+    animation: ressurg 1s ease-in;
+  }
+}
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.8);
+  }
+}
+
+@keyframes ressurg {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
