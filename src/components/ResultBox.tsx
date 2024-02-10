@@ -1,4 +1,15 @@
-const ResultBox = ({ color, category, score, icon }) => {
+interface ResultBoxProps {
+  color: string;
+  category: string;
+  score: number;
+  icon: string;
+}
+const ResultBox: React.FC<ResultBoxProps> = ({
+  color,
+  category,
+  score,
+  icon,
+}) => {
   return (
     <div className={`ResultBox__container ${color}`}>
       <div className="ResultBox__desc">
